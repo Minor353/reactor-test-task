@@ -1,0 +1,160 @@
+.resume-card {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $coffe-white;
+    padding: 28px 50px 8px 30px;
+    background-color: $white;
+
+    .link-color {
+        color: $blue;
+    }
+
+    .premium-color {
+        color: $orange;
+    }
+}
+
+.resume-card.resume-card-empty {
+    padding: 20px 50px 18px 30px;
+}
+
+.resume-card-col:first-child {
+    max-width: 620px;
+}
+
+.resume-card-address-text {
+    margin-right: 5px;
+}
+
+.resume-card-date {
+    span {
+        white-space: nowrap;
+    }
+}
+
+.resume-counter {
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    position: relative;
+
+
+    span {
+        color: $blue;
+    }
+}
+
+.resume-counter-num {
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 700;
+    margin-bottom: -3px;
+}
+
+.resume-counter-badge {
+    position: absolute;
+    top: -10px;
+    left: 80%;
+
+    .notification-counter {
+        color: $white;
+    }
+
+}
+
+.resume-card-row {
+    margin-bottom: 20px;
+
+    h2 {
+        margin: 0;
+    }
+
+    &:first-child {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 700;
+            color: $grey;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .resume-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 33px 18px 8px 20px;
+    }
+
+    .resume-card-row:first-child span {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .resume-card-menu {
+        .menu-list {
+            flex-direction: column;
+        }
+        .menu-list li {
+            padding: 0;
+            margin-bottom: 5px;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .resume-counter {
+        display: flex;
+        align-items: center;
+        a {
+            flex-direction: row;
+        }
+
+        .resume-counter-badge {
+            position: static;
+            margin-left: 5px;
+        }
+    }
+
+    .resume-card-col:last-child {
+        padding: 20px 0 10px;
+        width: 100%;
+        margin-top: 14px;
+        border-top: 1px solid $coffe-white;
+    }
+
+    .resume-counter-num {
+        font-size: 19px;
+        line-height: 21px;
+        margin-right: 5px;
+    }
+
+
+    .resume-card-row:first-child {
+        margin-bottom: 15px;
+    }
+
+    .resume-card.resume-card-empty {
+        padding: 20px 18px 20px 20px;
+    }
+
+    .resume-card-row:first-child span {
+        font-weight: 400;
+    }
+
+    
+}

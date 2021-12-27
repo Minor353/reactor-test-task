@@ -1,0 +1,9 @@
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown.show {
+    .arrow::before {
+        transform: rotate(-180deg);
+    }
+}

@@ -1,0 +1,9 @@
+.search-block {
+    .icon {
+        cursor: pointer;
+        color: $grey;
+    }
+    .icon::before {
+        display: block;
+    }
+}

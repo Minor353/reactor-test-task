@@ -1,0 +1,13 @@
+.app-store-link {
+    background: $white;
+    border: 1px solid $coffe-white;
+    border-radius: 4px;
+    display: block;
+    width: 140px;
+    height: 38px;
+    background-image: url('../images/content/app-store.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    overflow: hidden;
+}

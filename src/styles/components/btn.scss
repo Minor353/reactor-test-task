@@ -1,0 +1,57 @@
+.btn {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 9px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+
+    .arrow {
+        display: none;
+    }
+}
+
+.btn-blue {
+    border-color: $blue;
+    color: $blue;
+    background-color: $white;
+
+    &:hover {
+        border-color: $blue;
+        color: $blue;
+        background-color: $white;
+        opacity: 0.8;
+    }
+}
+
+.btn-green {
+    border-color: $green;
+    color: $white;
+    background-color: $green;
+
+    &:hover {
+        border-color: $green;
+        color: $white;
+        background-color: $green;
+        opacity: 0.8;
+    }
+}
+
+.btn-arrow {
+    padding-right: 45px;
+    .arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%) rotate(-90deg);
+    }
+}
+
+
+@include media-breakpoint-down(xs) {
+    .btn {
+        line-height: 20px;
+    }
+}

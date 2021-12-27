@@ -1,0 +1,30 @@
+.link {
+    position: relative;
+    display: inline-block;
+
+    .arrow {
+        display: none;
+    }
+}
+
+.link.arrow-right {
+    padding-right: 12px;
+    .arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%) rotate(-90deg);
+    }
+}
+
+.link.arrow-left {
+    padding-left: 17px;
+    .arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -3px;
+        transform: translateY(-50%) rotate(90deg);
+    }
+}

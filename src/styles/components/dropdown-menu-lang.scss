@@ -1,0 +1,19 @@
+.dropdown-menu-list {
+    display: none;
+}
+
+
+.dropdown-menu-toggle {
+    display: inline-block;
+    position: relative;
+    padding-right: 17px;
+
+    .arrow {
+        position: absolute;
+        right: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
