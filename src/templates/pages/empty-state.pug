@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="ru")
+  include ../includes/common/head
+  +head('Reactor || Empty state')
+  body
+    include ../includes/components/header
+    .main.empty-state-page
+      .container
+        .breadcrumbs
+          include ../includes/components/link
+          +link("Личный раздел", "link-color", "arrow-left", "#")
+        .group-block.align-bottom
+          h1 Вакансии и отклики
+          include ../includes/components/info
+          +info("На этой странице вы можете управлять существующими резюме и создавать новые.")
+        p 
+          b У вас еще нет вакансий.
+        p.mg-bottom-20 Чтобы начать активный поиск сотрудников, создайте ваши вакансии. Помните! Большинство соискателей не размещают резюме на сайте, а отправляют их прямо на найденные вакансии. Поэтому размещайте вакансии, и вы значительно увеличите шансы найти сотрудника.
+        .group-block.align-center.content-group
+          include ../includes/components/btn
+          +btn("Создать вакансию", "btn-green", "#")
+          span.color-green.mg-left-15 Доступна 
+            span.popup-wrap.color-green.border-dashed 21 из 630 публикаций
+              include ../includes/components/info-popup
+    include ../includes/components/footer

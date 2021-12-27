@@ -1,0 +1,4 @@
+mixin link(text, linkColor, arrowSide, link)
+    a(href=`${link}` class=`link ${linkColor} ${arrowSide}`)
+        .link-content=text
+        span.arrow.icon-glyphicon-arrow.color-blue

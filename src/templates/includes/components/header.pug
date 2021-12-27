@@ -1,0 +1,16 @@
+header.header
+    .container
+        .header-links
+            include dropdown-menu-lang
+            +dropdown-menu-lang("link-grey-light")
+            include link
+            +link("Соискателю", "link-grey-light", "arrow-right", "#")
+    .container
+        .header-wrap
+            .header-logo
+                include logo
+            .header-nav
+                include nav
+            .header-notifier-bell.sm-block-none 
+                include notifier-bell
+    .decor-gradient

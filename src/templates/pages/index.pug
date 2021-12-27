@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+html(lang="ru")
+    include ../includes/common/head
+    +head('Reactor || Vacancies and responses')
+    body
+        include ../includes/components/header
+        .main.vacancies-page
+            .container
+                .breadcrumbs
+                    include ../includes/components/link
+                    +link("Личный раздел", "link-color", "arrow-left", "#")
+                .group-block.align-bottom.mg-bottom-20
+                    h1 Вакансии и отклики
+                    include ../includes/components/info
+                    +info("На этой странице вы можете управлять существующими резюме и создавать новые.")
+                .group-block.align-center.content-group
+                    include ../includes/components/btn
+                    +btn("Создать вакансию", "btn-green", "#")
+                    span.color-green.mg-left-20.sm-mg-none Доступна 
+                        span.popup-wrap.color-green.border-dashed 21 из 630 публикаций
+                            include ../includes/components/info-popup
+                    .flex-block.mg-left-auto.sm-mg-none.filter-vacancies
+                        .dropdown
+                            a#dropdownMenuLink.dropdown-toggle.link-color(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Только размещенные
+                                span.arrow.icon-glyphicon-arrow
+                            .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                                a.dropdown-item.link-color(href='#') Только закрытые
+                                a.dropdown-item.link-color(href='#') Только черновики
+                        .decor-dot
+                        include ../includes/components/search-block
+                hr.xs-hr-full
+                include ../includes/components/applicants-list  
+                hr.xs-hr-full
+                .group-block.align-center.content-group
+                    include ../includes/components/btn
+                    +btn("Создать вакансию", "btn-green", "#")
+                    include ../includes/components/link
+                    +link("Удаленные вакансии", "link-color mg-left-auto sm-mg-none", "", "#")
+        include ../includes/components/footer

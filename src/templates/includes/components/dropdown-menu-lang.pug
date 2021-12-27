@@ -1,0 +1,10 @@
+mixin dropdown-menu-lang(textColor)
+    .dropdown-menu-lang
+        .dropdown
+            a#dropdownMenuLink.dropdown-toggle.link-color(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Русский
+                span.arrow.icon-glyphicon-arrow.color-blue
+            .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                a.dropdown-item.link-color(href='#') Українська
+                a.dropdown-item.link-color(href='#') Русский
+                a.dropdown-item.link-color(href='#') English

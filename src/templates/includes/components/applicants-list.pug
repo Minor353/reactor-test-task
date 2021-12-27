@@ -1,0 +1,118 @@
+ul.applicants-list
+    li.applicants-list-item 
+        .applicants-item-data
+            .applicants-data-trigger(data-toggle="collapse" href="#collapseCard1" role="button" aria-expanded="false" aria-controls="collapseCard1")
+                span.arrow.icon-glyphicon-arrow.color-blue
+                span.applicants-data-name Валентина Кущ
+            include info
+            +info("На этой странице вы можете просмотреть доступные резюме.")
+            span.applicants-data-num 4
+        .applicants-item-wrap.collapse#collapseCard1
+            .resume-card
+                .resume-card-col
+                    .resume-card-row
+                        h2 
+                            a(href="#") Бухгалтер з обліку
+                        span , 12 300 грн
+                    .resume-card-row
+                        .resume-card-address 
+                            span.resume-card-address-text Киев, вулиця Академіка Бутлерова,&nbsp;1
+                    .resume-card-row
+                        .resume-card-date 
+                            a(href="#").label-link
+                                span.arrow.icon-glyphicon-arrow
+                            span.label.standard Standard
+                            span 20.02.20 – 13.03.20
+                    .resume-card-row
+                        .resume-card-menu 
+                            ul.menu-list
+                                li 
+                                    a(href="#").link-color Подобрать резюме
+                                li 
+                                    a(href="#").premium-color Сделать Premium
+                                li 
+                                    a(href="#").link-color Обновить дату размещения
+                                li
+                                    .dropdown
+                                        a#dropdownMenuLink.dropdown-toggle.link-color(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                            | Еще
+                                            span.arrow.icon-glyphicon-arrow
+                                        .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                                            a.dropdown-item.link-color(href='#') Редактировать
+                                            a.dropdown-item.link-color(href='#') Скачать
+                                            a.dropdown-item.link-color(href='#') Распечатать
+                                            a.dropdown-item.link-color(href='#') Удалить
+                .resume-card-col
+                    .resume-counter 
+                        a(href="#") 
+                            span.resume-counter-num 217 
+                            span откликов
+                        .resume-counter-badge
+                            include badge 
+                            +badge("9")
+            .resume-card
+                .resume-card-col
+                    .resume-card-row
+                        h2 
+                            a(href="#") Керівник департаменту маркетингових проєктів (Шевченківський район)<br>
+                        span 5 500 – 11 500 грн*
+                    .resume-card-row
+                        .resume-card-address 
+                            span.resume-card-address-text Киев
+                            span.label.test Тест
+                            span.label.auto-renewal Автопродление
+                    .resume-card-row
+                        .resume-card-date 
+                            span.label.standard-plus Standard Plus
+                            span.label-attention
+                                span.icon.icon-glyphicon-lightning
+                            span 26.02.20 – 29.02.20
+                    .resume-card-row
+                        .resume-card-menu 
+                            ul.menu-list
+                                li 
+                                    a(href="#").link-color Подобрать резюме
+                                li 
+                                    a(href="#").premium-color Сделать Premium
+                                li 
+                                    a(href="#").link-color Обновить дату размещения
+                                li 
+                                    .dropdown
+                                        a#dropdownMenuLink.dropdown-toggle.link-color(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                            | Еще
+                                            span.arrow.icon-glyphicon-arrow
+                                        .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                                            a.dropdown-item.link-color(href='#') Редактировать
+                                            a.dropdown-item.link-color(href='#') Скачать
+                                            a.dropdown-item.link-color(href='#') Распечатать
+                                            a.dropdown-item.link-color(href='#') Удалить
+                .resume-card-col
+                    .resume-counter 
+                        a(href="#") 
+                            span.resume-counter-num 125
+                            span откликов
+                        .resume-counter-badge
+                            include badge
+                            +badge("37")
+    li.applicants-list-item 
+        .applicants-item-data 
+            .applicants-data-trigger(data-toggle="collapse" href="#collapseCard2" role="button" aria-expanded="false" aria-controls="collapseCard2")
+                span.arrow.icon-glyphicon-arrow.color-blue
+                span.applicants-data-name Березан Елена
+            include info
+            +info("На этой странице вы можете просмотреть доступные резюме.")
+            span.applicants-data-num 589
+        .applicants-item-wrap.collapse#collapseCard2
+            .resume-card.resume-card-empty
+                span У этого пользователя нет вакансий.
+    li.applicants-list-item 
+        .applicants-item-data 
+            .applicants-data-trigger(data-toggle="collapse" href="#collapseCard3" role="button" aria-expanded="false" aria-controls="collapseCard3")
+                span.arrow.icon-glyphicon-arrow.color-blue
+                span.applicants-data-name Бондарук Анжелика
+            include info
+            +info("На этой странице вы можете просмотреть доступные резюме.")
+            span.applicants-data-num 19
+        .applicants-item-wrap.collapse#collapseCard3
+            .resume-card.resume-card-empty
+                span У этого пользователя нет вакансий.
